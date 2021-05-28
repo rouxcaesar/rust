@@ -1,2 +1,5 @@
+# Vim swap files
+**/*.swp
+
 # Generated files
-*/target/
+**/target/
