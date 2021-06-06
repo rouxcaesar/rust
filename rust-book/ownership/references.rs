@@ -1,11 +1,14 @@
 fn main() {
-    let s1 = String::from("hello");
+    let mut s = String::from("hello");
 
-    change(&s1);
+    let s1 = &s;
+    let s2 = &s;
 
-    println!("{}", s1);
-}
+    println!("{} and {}", s1, s2);
 
-fn change(s: &String) {
-    s.push_str(", world");
+    let s3 = &mut s;
+    println!("{}", s3);
+
+    let s4 = &mut s;
+    println!("{}", s4);
 }
