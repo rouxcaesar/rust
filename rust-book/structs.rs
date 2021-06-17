@@ -25,4 +25,10 @@ fn main() {
     u.active = false;
 
     let u2 = build_user(String::from("Don"), "don@don.com".to_string());
+
+    let u3 =  User {
+        email: String::from("hello@email.com"),
+        username: String::from("Joe Schmo"),
+        ..u2
+    };
 }
